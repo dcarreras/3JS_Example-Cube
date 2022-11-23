@@ -32,6 +32,9 @@
         //6.Funcion de animación / renderizado
         function animate() {
             requestAnimationFrame(animate);
+            //7. Animamos la rotación del cubo
+            cube.rotation.x += 0.01;
+			cube.rotation.y += 0.01;
             renderer.render(scene,camera);
         }
         animate();
